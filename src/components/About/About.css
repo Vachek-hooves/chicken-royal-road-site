@@ -1,0 +1,143 @@
+.about {
+  padding: 100px 0;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.about__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130%;
+  max-width: none;
+  border-radius: var(--radius-lg);
+  filter: blur(0.5px);
+  z-index: 0;
+}
+
+.about__phone {
+  position: relative;
+  z-index: 1;
+  width: 260px;
+}
+
+.about__badge {
+  position: absolute;
+  z-index: 2;
+  top: -6%;
+  left: -14%;
+  width: 150px;
+}
+
+.eyebrow {
+  margin-bottom: 4px;
+}
+
+.about__copy h2 {
+  margin-top: 14px;
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--color-ink);
+}
+
+.about__copy p {
+  margin-top: 16px;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.about__highlight {
+  color: var(--color-ink) !important;
+  font-weight: 700 !important;
+}
+
+.about__features {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 560px;
+}
+
+.about__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.about__features-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--color-navy);
+  font-size: 16px;
+}
+
+.about__features h3 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.about__features p {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 960px) {
+  .about {
+    padding: 70px 0;
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .about__visual {
+    order: -1;
+  }
+
+  .about__bg {
+    width: 100%;
+  }
+
+  .about__copy p,
+  .about__features {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__features li {
+    text-align: left;
+  }
+}

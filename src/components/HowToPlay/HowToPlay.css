@@ -1,0 +1,28 @@
+.how-to-play {
+  padding: 100px 0;
+  background: var(--color-white);
+}
+
+.how-to-play__grid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.step-card {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 900px) {
+  .how-to-play {
+    padding: 70px 0;
+  }
+
+  .how-to-play__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

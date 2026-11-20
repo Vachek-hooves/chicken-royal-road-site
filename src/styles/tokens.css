@@ -1,0 +1,40 @@
+:root {
+  /* Primary palette */
+  --color-primary-1: #fec610; /* gold */
+  --color-primary-2: #e9141b; /* red */
+  --color-primary-3: #fbd54b; /* light gold */
+  --color-primary-4: #fef49d; /* pale yellow */
+
+  /* Secondary palette */
+  --color-secondary-1: #b15b36; /* rust */
+  --color-secondary-2: #230f13; /* near-black maroon */
+  --color-secondary-3: #7d2f14; /* dark brown-red */
+  --color-secondary-4: #dea366; /* tan */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(90deg, #fef49d 0%, #fec610 100%);
+  --gradient-secondary: linear-gradient(90deg, #7d2f14 0%, #230f13 100%);
+
+  /* Neutrals */
+  --color-navy: #0b1d3a;
+  --color-navy-deep: #081528;
+  --color-ink: #1a1322;
+  --color-white: #ffffff;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-cream: #f4e8cd;
+
+  /* Typography */
+  --font-display: 'Rubik One', 'Arial Black', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --container-width: 1200px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 12px 30px rgba(11, 29, 58, 0.12);
+  --shadow-button: 0 8px 20px rgba(254, 198, 16, 0.35);
+}
